@@ -33,3 +33,24 @@ npm run build
 ```
 =======
 # hello-vue3
+
+创建一个vue3的工程
+npm  create vue@latest
+
+全局安装vite  
+npm install -g vite
+
+在script 标签里面写文件名称name的属性，需要安装的插件
+npm i vite-plugin-vue-setup-extend
+
+安装axios
+npm i axios
+
+安装路由版本
+ npm i vue-router
+
+
+
+vscode的快捷键
+
+Shift+Alt+F  格式化的快捷键

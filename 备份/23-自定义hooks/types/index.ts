@@ -1,7 +1,8 @@
 export interface PersonInter{
     id:string,  //ts世界里面，S必须要小写
     name:string,
-    age:number
+    age:number,
+  
 }
 
 
