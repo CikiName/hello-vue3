@@ -3,13 +3,11 @@
     <!-- 导航区 -->
  <ul>
     <li v-for="item in newsList" :key="item.id">
-        <!-- 第一种写法 -->
-<!--       <RouterLink :to="`/news/detail/${item.id}/${item.title}/${item.content}`">{{ item.title }}</RouterLink> 
- -->   
-     <!-- 第二种写法 -->
+      <button @click="showNewsDetail(item)">查看详情</button>
+     <!-- 第二种写法: -->
       <RouterLink :to="{
         name:'guang',
-        params:{
+        query:{
           id:item.id,
           title:item.title,
           content:item.content
@@ -31,12 +29,48 @@
 <script lang="ts" name="News" setup>
 import { reactive } from 'vue';
 import { RouterView,RouterLink } from 'vue-router';
+import { useRouter } from 'vue-router';
  const newsList=reactive([
     {id:'dsaadasdadn01',title:"很好的抗癌食物",content:"西蓝花"},
     {id:'dsaadasdadn02',title:"如何一夜暴富",content:"学习it"},
     {id:'dsaadasdadn03',title:"震惊，万万没有想到",content:"明天是周一"},
     {id:'dsaadasdadn04',title:"好消息！！！",content:"快过年了"}
  ])
+
+ let router=useRouter();
+
+ interface NewsInter{
+  id:string,
+  title:string,
+  content:string,
+ }
+
+
+
+function showNewsDetail(item:NewsInter){
+  //看完以后，可以回去
+  /* router.push({
+     name:'guang',
+        query:{
+          id:item.id,
+          title:item.title,
+          content:item.content
+        }
+  }) */
+  
+  //看完以后，回去不了
+  router.replace({
+     name:'guang',
+        query:{
+          id:item.id,
+          title:item.title,
+          content:item.content
+        }
+  })
+}
+
+
+ router
 
 </script>
  

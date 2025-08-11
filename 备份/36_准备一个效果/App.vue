@@ -1,6 +1,6 @@
 <template>
  <div>
- <Count></Count>
+  <Count/>
 <love-talk></love-talk>
  </div>
 
@@ -10,7 +10,7 @@
 
 
 <script setup lang="ts"  name="App">
-import Count from './compomemts/Count.vue';
+import Count from './compomemts/count.vue';
 import LoveTalk from './compomemts/LoveTalk.vue';
 
 </script>

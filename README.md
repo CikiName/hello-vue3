@@ -54,3 +54,12 @@ npm i axios
 vscode的快捷键
 
 Shift+Alt+F  格式化的快捷键
+
+
+//生成一个id  nanoid  
+npm i nanoid
+
+//搭建pinia 环境
+npm i pinia
+
+npm install bootstrap@3
