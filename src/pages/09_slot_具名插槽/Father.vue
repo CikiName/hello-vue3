@@ -57,7 +57,7 @@
   }
   .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly;/* 均分开 */
   }
   img,video {
     width: 100%;

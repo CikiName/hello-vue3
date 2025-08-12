@@ -2,6 +2,8 @@
   <div class="category">
     <slot name="s1">默认内容1</slot>
     <slot name="s2">默认内容2</slot>
+
+    
   </div>
 </template>
 

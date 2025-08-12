@@ -1,28 +1,32 @@
 <template>
   <div class="father">
-    <h3>父组件</h3>
-    <h4>银子：{{ money }}万元</h4>
-    <h4>车子：一辆{{car.brand}}车，价值{{car.price}}万元</h4>
+   <h3>我是父组件</h3>
+   <h4>银子：{{ money }}</h4>
+   <h4>车子：一辆{{ car.brand }}，价值：{{ car.price }}万元</h4>
     <Child/>
   </div>
 </template>
 
 <script setup lang="ts" name="Father">
-  import Child from './Child.vue'
-  import {ref,reactive,provide} from 'vue'
+import Child from './Child.vue';
 
-  let money = ref(100)
-  let car = reactive({
-    brand:'奔驰',
-    price:100
-  })
-  function updateMoney(value:number){
-    money.value -= value
-  }
+import { ref,reactive,provide } from 'vue';
+ 
+let  money=ref(100)
 
-  // 向后代提供数据
-  provide('moneyContext',{money,updateMoney})
-  provide('car',car)
+let  car=reactive({
+  brand:"奔驰",
+  price:120
+})
+
+//向其后代提供数据
+provide('moneyContext',{money,updateMoney})
+provide("car",car)
+
+//更新钱 的方法
+ function updateMoney(val:number){
+  money.value-=val
+ }
 
 </script>
 

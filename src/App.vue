@@ -15,7 +15,8 @@
                 <router-link active-class="active" to="/ref-parent" class="list-group-item">6.RefChildrenParent</router-link>
                 <router-link active-class="active" to="/provide-inject" class="list-group-item">7.ProvideInject</router-link>
                 <router-link active-class="active" to="/pinia" class="list-group-item">8.Pinia</router-link>
-                <router-link active-class="active" to="/slot" class="list-group-item">9.Slot</router-link>
+                <router-link active-class="active" to="/slot1" class="list-group-item">9.Slot默认插槽</router-link>
+                 <router-link active-class="active" to="/slot2" class="list-group-item">10.Slot具名插槽</router-link>
 
             </div>
             <div class="col-x5-9 col-md-9 col-lg-9 col-xl-9">

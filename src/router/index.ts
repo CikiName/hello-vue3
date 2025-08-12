@@ -7,7 +7,8 @@ import AttrsListeners from '@/pages/05_$attrs/Father.vue'
 import RefChildrenParent from '@/pages/06_$refs-$parent/Father.vue'
 import ProvideInject from '@/pages/07_provide-inject/Father.vue'
 import Pinia from '@/pages/08_pinia/Father.vue'
-import Slot from '@/pages/09_slot/Father.vue'
+import Slot1 from '@/pages/09_slot_默认插槽/Father.vue'
+import Slot2 from '@/pages/09_slot_具名插槽/Father.vue'
 
 
  const router= createRouter({
@@ -39,8 +40,12 @@ import Slot from '@/pages/09_slot/Father.vue'
       path:'/pinia',
       component:Pinia
     },{
-      path:'/slot',
-      component:Slot
+      path:'/slot1',
+      component:Slot1
+    },
+    {
+      path:'/slot2',
+      component:Slot2
     }
   ]
 })

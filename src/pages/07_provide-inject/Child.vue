@@ -1,8 +1,8 @@
 <template>
   <div class="child">
     <h3>我是子组件</h3>
-    <GrandChild/>
   </div>
+  <GrandChild></GrandChild>
 </template>
 
 <script setup lang="ts" name="Child">
