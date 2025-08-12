@@ -63,3 +63,10 @@ npm i nanoid
 npm i pinia
 
 npm install bootstrap@3
+
+
+npm install bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+安装mitt
+npm i mitt
